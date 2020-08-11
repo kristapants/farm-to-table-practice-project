@@ -45,6 +45,9 @@ a{
 i{
     font-size: 5rem;
 }
+a:hover{
+    color: #FCB131;
+}
 
 /*Header Sections*/
 header nav{
@@ -125,3 +128,102 @@ header nav{
     text-align: left;
 }
 
+/*Gallery*/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery div{
+    width:40%;
+    height: 40vh;
+    margin: 4% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.gallery div .hide{
+    height:10vh;
+    background-color: #ffffff;
+    display: none;
+}
+.gallery div:hover .hide{
+    display: block;
+}
+.farm{
+    background-image: url('../images/barn.jpg');
+}
+.cook{
+    background-image: url('../images/cook.jpg');
+}
+.produce{
+    background-image: url('../images/produce.jpg');
+}
+.animals{
+    background-image: url('../images/sheep.jpg');
+}
+
+/*contact section*/
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact h2{
+    width: 100$;
+}
+.left, .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0;
+}
+.contact-info{
+    width: 35%;
+    line-height: 2;
+}
+.contact-info h3{
+    text-align: left;
+}
+.img-container{
+    width: 40%;
+}
+
+/*Footer*/
+footer{
+    background-color: #FCB131;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+footer a{
+    color: #ffffff;
+}
+footer a:hover{
+    color: #4f4f4f;
+}
+footer div{
+    width: 33%;
+}
+
+nav.social{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+nav.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav.main a{
+    margin: 2% 0;
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
